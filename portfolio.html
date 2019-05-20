@@ -1,0 +1,157 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Zack Robin Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Bungee|Francois+One" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+
+   <!-- Title + Favicon -->
+   <link rel="shortcut icon" href="images/zdr2.png" type="image/x-icon">
+   <title>Concerto</title>
+   <!-- /Title + Favicon -->
+
+</head>
+
+<body >
+   
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Zack Robin</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="float-right">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="row">
+      <div class="col-xs-12 bg-dark">
+  <video autoplay muted loop id="myVideo" class="embed-responsive">
+      <source src="./Images/gooter.mp4" type="video/mp4">
+
+      </video> 
+
+      <div class="container p-content" >
+
+
+
+      <div id="carouselExampleControls" style="opacity:0.8;"class="carousel slide" id="carousel" data-ride="carousel">
+          <div class="carousel-inner">
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            <div class="carousel-item active">
+                <div class="card" style="width: 70%;">
+       
+                    <div class="card-body">
+                      <h5 class="card-title text-dark">Detoura - Here to Stay (Album)</h5>
+                      <p class="card-text text-dark">Detoura - Here to Stay - Here to Stay by my band Detoura was the first album that I have ever produced single-handedly. This was a DIY production with the drums being tracked in a pro-studio while guitar/bass/vocals were tracked in home studio set ups. I recorded, mixed and mastered the audio along with playing guitar on this album </p>
+                      
+                      <a href="https://open.spotify.com/album/1lNgtDQeYWnI5e249hoY38" target="_blank" class="btn btn-primary">Check it out on Spotify!</a>
+                      <a href="https://www.youtube.com/watch?v=FweshOhGAyA" target="_blank" class="btn btn-danger">Check Out the Single on Youtube!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card" style="width: 70%;">
+      
+                    <div class="card-body">
+                      <h5 class="card-title">New Dilemma - Tongue as a Weapon</h5>
+                      <p class="card-text"> New Dilemma is a local Orlando rock band who's album I had the pleasure of mixing. The band approached me with a salavge operation due to the fact that the studio in which they recrded the tracks did an unsatisfactory job of tracking and mixing. So I went ahead, took the raw unmixed Pro Tools session and mixed/mastered through my studio set up. The result: New Dilemma was able to release their music that they worked so incredibly hard on rather than scraping the project all together.  </p>
+                      <a href="https://open.spotify.com/album/3WPIA0uzlylbqxvkrrPKwA?si=TBVsC_inRNSy6ozFtOhg-A" class="btn btn-primary"target="_blank">Check out New Dilemma!</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card" style="width: 70%;">
+          
+                    <div class="card-body">
+                      <h5 class="card-title">The A-List (App)</h5>
+                      <p class="card-text">The A-List is an application conceived from my experiences as a musician. The biggest issue facing bands and musicians is the sheer difficulty of finding the right people. The A-List aims to allievate that problem with a profile-based musician's network. The user will first create a profile, inputting the various required information (name, age, location, gender, instrument, musical style, etc.) and that profile will be stored in a mongo database. The user can then search for musicians based upon instrument, style, location and gender resulting in a list of matching profiles with contact information. The app utlizes mongoose, node and express to handle the data and back-end operations while the front-end UI utlizes react with a component-based architecture. </p>
+                      <a href="https://fast-scrubland-81250.herokuapp.com/" class="btn btn-primary"target="_blank">Check out The A-List!</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+</div>
+</div>
+</div>
+
+  <script type="text/javascript" src="javascript/main.js"></script>
+  <script type="text/javascript" src="javascript/particles.js"></script>
+  <script type="text/javascript" src="javascript/app.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>
